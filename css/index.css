@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Novecentosanswide-Medium;
+    src: url(../fonts/Novecentosanswide-Medium.otf);
+}
+@font-face {
+    font-family: Novecentosanswide-Book;
+    src: url(../fonts/Novecentosanswide-Book.otf);
+}
+@font-face {
+    font-family: didotltsd;
+    src: url(../fonts/DidotLTStd-Italic.otf);
+}
+@media screen and (max-width: 349px) {
+    #timer .items .item-time { width: 65px; }
+    #timer .items .item-time .value { font-size: 32px; margin-bottom: 10px; }
+    #timer .items .item-time .label { font-size: 11px; }
+}
+@media screen and (max-width: 470px) {
+    #timer .items .item-time { width: 70px; }
+    #timer .items .item-time .value { font-size: 35px; margin-bottom: 10px; }
+    #timer .items .item-time .label { font-size: 12px; }
+}
+@media screen and (max-width: 770px) {
+    #timer .items .item-time { width: 100px; }
+    #timer .items .item .value { font-size: 45px; }
+}
+body {
+    font-family: 'Novecentosanswide-Medium', sans-serif;
+}
+nav {
+    padding: 0 10px;
+    margin: 18px 50px;
+}
+.img-carousel {
+    max-height: 580px;
+}
+.items {
+    margin: 50px 0;
+    word-spacing: 0;
+}
+.items .item-time {
+    display: inline-block;
+    border-left: 1px solid #ff583c;
+    width: 174px;
+}
+.items .item-time:last-child {
+    border-right: 1px solid #ff583c;
+}
+.items .item-time .value {
+    font-size: 75px;
+    color: #101e24;
+    margin-top: -10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Gt Sectra Display Bold, sans-serif;
+}
+.items .item-time .label {
+    font-size: 14px;
+    display: inline-block;
+}
+.email-box {
+    display: inline-block;
+    margin: 0;
+    width: 304px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ff4400;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+.email-submit {
+    display: inline-block;
+    margin: 0 0 0 -5px;
+    width: 49px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ff4400;
+    border-left: none;
+    text-indent: -9999px;
+    background: url(../assets/newsletter_submit.png) center no-repeat;
+}
+.email-submit:hover {
+    background-color: #ff4400;
+    cursor: pointer;
+    background-image: url(../assets/newsletter_submit_active.png);
+}
+content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 38%;
+    left: 0;
+}
+.content > h2 {
+    color: white;
+}
+.item {
+    display: inline-block;
+    width: 507px;
+    height: 457px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #ffffff;
+    padding: 50px 55px;
+    text-align: left;
+    margin-bottom: 15px;
+    word-spacing: normal;
+}
+.container4Item {
+    background-color: black;
+}
+.year-text {
+    color: #ff4400
+}
+.description {
+    font-family: Open Sans, sans-serif;
+}
+a.button {
+    border: 1px solid #ff583c;
+    font-size: 16px;
+    color: #ff4400;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 10px 60px;
+    display: inline-block;
+}
+a.button:hover {
+    color: white;
+    background-color: #ff4400;
+}
+.sponsor {
+    max-width: 210px;
+    max-height: 120px;
+    margin-bottom: 70px;
+}
+.img-above-footer {
+    background: url(../assets/pete_mccutchen_awarded_entry_1920.png) center no-repeat;
+    max-height: 436px;
+}
+.container-footer {
+    background: #101e24;
+    max-width: 100%;
+    height: auto;
+}
+.container-footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: Novecentosanswide-Book;
+}
