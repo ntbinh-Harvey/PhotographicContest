@@ -1,0 +1,34 @@
+@font-face {
+    font-family: didotltsd;
+    src: url(../fonts/DidotLTStd-Italic.otf);
+}
+@font-face {
+    font-family: Novecentosanswide-Medium;
+    src: url(../fonts/Novecentosanswide-Medium.otf);
+}
+@font-face {
+    font-family: Novecentosanswide-Book;
+    src: url(../fonts/Novecentosanswide-Book.otf);
+}
+body {
+    font-family: 'Novecentosanswide-Medium', sans-serif;
+}
+
+/* css foooter  */
+.container-footer {
+    background: #101e24;
+    max-width: 100%;
+}
+.footer-link {
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: Novecentosanswide-Medium;
+}
+.footer-link:hover {
+    color: #ff4400;
+}
+.container-content {
+    padding: 60px 0;
+}

@@ -27,6 +27,19 @@
 body {
     font-family: 'Novecentosanswide-Medium', sans-serif;
 }
+.modal {
+    position: fixed;
+    top: 35%;
+}
+.modal-dialog {
+    max-width: 930px; 
+}
+.modal-content {
+    height: 253px;
+}
+.modal-body {
+    height: 100%;
+}
 nav {
     padding: 0 10px;
     margin: 18px 50px;

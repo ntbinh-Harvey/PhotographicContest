@@ -10,23 +10,10 @@
     font-family: Novecentosanswide-Book;
     src: url(../fonts/Novecentosanswide-Book.otf);
 }
-@media screen and (max-width: 349px) {
-    #timer .items .item-time { width: 40px; }
-    #timer .items .item-time .value { font-size: 28px; margin-bottom: 10px; }
-    #timer .items .item-time .label { font-size: 11px; }
-}
-@media screen and (max-width: 470px) {
-    #timer .items .item-time { width: 70px; }
-    #timer .items .item-time .value { font-size: 30px; margin-bottom: 10px; }
-    #timer .items .item-time .label { font-size: 12px; }
-}
-@media screen and (max-width: 770px) {
-    #timer .items .item-time { width: 80px; }
-    #timer .items .item .value { font-size: 45px; }
-}
 body {
     font-family: Open Sans, sans-serif;
 }
+/* style phan content  */
 #container {
     background:#101e24;
     margin: 150px auto;
@@ -68,18 +55,6 @@ a.button:hover {
     color: white;
     background-color: #ff4400;
 }
-.forgot__pass {
-    font-family: didotltsd, sans-serif;
-    font-size: 14px;
-    text-transform: lowercase;
-}
-.forgot__pass > a {
-    color: #ff4400;
-    text-decoration: none;
-}
-.forgot__pass > a:hover {
-    text-decoration: underline;
-}
 .form-control {
     border-top: none;
     border-right: none;
@@ -91,29 +66,13 @@ a.button:hover {
     box-shadow: none;
     border-radius: 0;
 }
-.items {
-    margin: 50px 0;
-    word-spacing: 0;
+.link {
+    color: #ff4400;
+    text-decoration: none;
 }
-.items .item-time {
-    display: inline-block;
-    border-left: 1px solid #ff583c;
-    width: 174px;
-}
-.items .item-time:last-child {
-    border-right: 1px solid #ff583c;
-}
-.items .item-time .value {
-    font-size: 75px;
-    color: #101e24;
-    margin-top: -10px;
-    display: inline-block;
-    margin-bottom: 20px;
-    font-family: Open sans, sans-serif;
-}
-.items .item-time .label {
-    font-size: 14px;
-    display: inline-block;
+.link:hover {
+    color: #ff4400;
+    text-decoration: underline;
 }
 /* css footer */
 .container-footer {
