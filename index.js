@@ -5,7 +5,7 @@
 //   });
 // });
 // Đồng hồ đếm ngược
-var countDownDate = new Date("Apr 25,2021 12:30:00").getTime();
+var countDownDate = new Date("Jun 25,2021 12:30:00").getTime();
 var x = setInterval(() => {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -17,14 +17,45 @@ var x = setInterval(() => {
   $("#minutes-value").html(minutes);
   $("#hours-value").html(hours);
   $("#seconds-value").html(seconds);
-  // if (distance < 0) {
-  //   clearInterval(x);
-  //   $(".join").html("hết hạn");
-  //   $(".countdown").addClass("count");
-  //   $(".join").addClass("expire").removeClass("join");
-  // }
 }, 1000);
 // load modal on first page
 $(window).on("load", function () {
   $(".modal").modal("show");
+});
+//handle rating part
+$(function () {
+  $(document).on(
+    {
+      mouseover: function (event) {
+        $(this).find(".far").addClass("star-over");
+        $(this).prevAll().find(".far").addClass("star-over");
+      },
+      mouseleave: function (event) {
+        $(this).find(".far").removeClass("star-over");
+        $(this).prevAll().find(".far").removeClass("star-over");
+      },
+    },
+    ".rate"
+  );
+
+  $(document).on("click", ".rate", function () {
+    if (!$(this).find(".star").hasClass("rate-active")) {
+      $(this)
+        .siblings()
+        .find(".star")
+        .addClass("far")
+        .removeClass("fas rate-active");
+      $(this)
+        .find(".star")
+        .addClass("rate-active fas")
+        .removeClass("far star-over");
+      $(this)
+        .prevAll()
+        .find(".star")
+        .addClass("fas")
+        .removeClass("far star-over");
+    } else {
+      console.log("has");
+    }
+  });
 });

@@ -1,0 +1,168 @@
+
+@font-face {
+    font-family: Novecentosanswide-Medium;
+    src: url(../fonts/Novecentosanswide-Medium.otf);
+}
+@font-face {
+    font-family: Novecentosanswide-Book;
+    src: url(../fonts/Novecentosanswide-Book.otf);
+}
+@font-face {
+    font-family: didotltsd;
+    src: url(../fonts/DidotLTStd-Italic.otf);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* content  */
+h1 {
+	font-family: 'Novecentosanswide-Medium', sans-serif;
+	font-size: 20px;
+}
+.rating_picture {
+    width: 100%;
+    padding: 7px 0;
+	max-height: 400px;
+	/* transition: transform .2s; */
+}
+/* .rating_picture:hover {
+	transform: scale(1.2);
+} */
+/* content star css */
+.wrap {
+	width: 100%;
+	height: auto;
+	/* background: #fff; */
+	border-radius: 10px;
+}
+.stars {
+	width: fit-content;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.star {
+	color: #f40 !important;
+}
+.rate {
+	height: 50px;
+	margin-left: -5px;
+	padding: 5px;
+	font-size: 25px;
+	position: relative;
+	cursor: pointer;
+}
+.rate input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	pointer-events: none;
+}
+.star-over::after {
+	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+	font-size: 16px;
+	content: "\f005";
+	display: inline-block;
+	color: #f40;
+	opacity: 0.6;
+	z-index: 1;
+	position: absolute;
+	top: 17px;
+	left: 10px;
+}
+
+.rate:nth-child(1) .face::after {
+	content: "\f119"; /* ☹ */
+}
+.rate:nth-child(2) .face::after {
+	content: "\f11a"; /* 😐 */
+}
+.rate:nth-child(3) .face::after {
+	content: "\f118"; /* 🙂 */
+}
+.rate:nth-child(4) .face::after {
+	content: "\f580"; /* 😊 */
+}
+.rate:nth-child(5) .face::after {
+	content: "\f59a"; /* 😄 */
+}
+.face {
+	opacity: 0;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: #f40;
+	border-radius: 5px;
+	top: -50px;
+	left: 2px;
+	transition: 0.2s;
+	pointer-events: none;
+}
+.face::before {
+	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+	content: "\f0dd";
+	display: inline-block;
+	color: #f40;
+	z-index: 1;
+	position: absolute;
+	left: 9px;
+	bottom: -15px;
+}
+.face::after {
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	display: inline-block;
+	color: #fff;
+	z-index: 1;
+	position: absolute;
+	left: 5px;
+	top: -1px;
+}
+
+.rate:hover .face {
+	opacity: 1;
+}
+/* input area */
+.input-textarea {
+	border: 1px solid #f40;
+}
+.input-textarea:focus {
+	border: 1px solid blue;
+	box-shadow: 0;
+}
+/* submit  */
+.submit {
+	border: 1px solid #ff583c;
+    font-size: 16px;
+    color: #ff4400;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: inline-block;
+	background-color: transparent;
+}
+.submit:hover {
+	background-color: #F40;
+	border: 1px solid #F40;
+}
+/* footer */
+.container-footer {
+    background: #101e24;
+    max-width: 100%;
+}
+.footer-link {
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: Novecentosanswide-Medium;
+}
+.footer-link:hover {
+    color: #ff4400;
+}
+.container-content {
+    padding: 60px 0;
+}
